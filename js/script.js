@@ -137,6 +137,7 @@ linksPagina.forEach(function (link) {
         event.preventDefault();
 
         const pagina = link.dataset.pagina;
+        document.title = "Projeto ReConecta - " + link.textContent.trim();
             if (pagina === "inicio") {
         conteudo.innerHTML = paginaInicio;
         }
