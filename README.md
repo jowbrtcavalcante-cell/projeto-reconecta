@@ -43,6 +43,16 @@ Não é necessário servidor ou instalação de dependências.
 - Menu hambúrguer para dispositivos móveis.
 - Formulário de cadastro com máscaras para CPF, telefone e CEP.
 
+## Versionamento
+
+O projeto utiliza Git para controle de versão e o GitHub como repositório remoto, seguindo uma adaptação do fluxo GitFlow:
+
+- **main** — contém as versões estáveis do projeto.
+- **develop** — branch de integração, onde as funcionalidades são reunidas antes de chegarem à `main`.
+- **feature/...** — branches de trabalho criadas a partir da `develop` para desenvolver cada funcionalidade de forma isolada.
+
+As alterações são registradas por meio de commits com mensagens descritivas e, quando concluídas, integradas à `develop` por meio de Pull Requests vinculados às issues correspondentes.
+
 ## Licença
 
 Projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Front-end.
