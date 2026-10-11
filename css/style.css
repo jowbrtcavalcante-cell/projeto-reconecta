@@ -97,7 +97,8 @@ footer {
     padding: var(--espaco-1);
 }
 
-.dropdown:hover .submenu {
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
     display: flex;
     flex-direction: column;
 }
