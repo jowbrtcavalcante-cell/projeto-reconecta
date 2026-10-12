@@ -11,15 +11,21 @@
     <header>
     <h1>ONG ReConecta</h1>
     
-    <button class="menu-hamburguer" aria-label="Abrir menu">
+    <button class="menu-hamburguer"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu-principal">
     ☰
 </button>
 
-    <nav>
-    <a href="index.html" data-pagina="inicio">Início</a>
+<nav id="menu-principal" aria-label="Menu principal">
+    <a href="index.html" data-pagina="inicio" aria-current="page">Início</a>
 
     <div class="dropdown">
-        <a href="projetos.html" data-pagina="projetos">Projetos</a>
+        <a href="projetos.html"
+   data-pagina="projetos"
+   aria-haspopup="true"
+   aria-expanded="false">Projetos</a>
 
         <div class="submenu">
             <a href="projetos.html">Doações</a>

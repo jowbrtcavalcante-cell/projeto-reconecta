@@ -127,6 +127,18 @@ function criarCadastro() {
 `;
 } 
 
+function ativarMenuHamburguer() {
+    const botao = document.querySelector(".menu-hamburguer");
+    const menu = document.getElementById("menu-principal");
+
+    if (botao && menu) {
+        botao.addEventListener("click", function () {
+            const estaAberto = menu.classList.toggle("menu-aberto");
+            botao.setAttribute("aria-expanded", estaAberto);
+        });
+    }
+}
+
 // Navegação da SPA
 const linksPagina = document.querySelectorAll("[data-pagina]");
 const conteudo = document.getElementById("conteudo");
@@ -183,4 +195,6 @@ function criarProjetos() {
 
 ativarMascaras();
 ativarFormulario();
+ativarMenuHamburguer();
+
 
