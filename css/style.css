@@ -97,7 +97,8 @@ footer {
     padding: var(--espaco-1);
 }
 
-.dropdown:hover .submenu {
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
     display: flex;
     flex-direction: column;
 }
@@ -261,5 +262,29 @@ input:invalid {
 
     main section {
         grid-column: span 6;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-fundo: #0F1418;
+        --cor-texto: #E8ECEE;
+        --cor-branca: #F4F6F5;
+    }
+
+    body {
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+    }
+
+    .modal-conteudo {
+        background-color: #1A2024;
+        color: var(--cor-texto);
+    }
+
+    input {
+        background-color: #1A2024;
+        color: var(--cor-texto);
+        border-color: #3A4046;
     }
 }
